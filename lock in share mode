@@ -1,0 +1,4 @@
+lock in share mode适用于同时操作两个表
+for update适用于同时操作一个表
+
+http://blog.csdn.net/cug_jiang126com/article/details/50544728
