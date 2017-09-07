@@ -1,0 +1,6 @@
+download升序  createtime降序  主要download分组
+为了实现这个功能 貌似所有需要的列都要放在group by后面
+
+select tagid, download, createtime from localsense_videotrace_record_task 
+group by download, tagid, createtime
+order by download, createtime desc;
