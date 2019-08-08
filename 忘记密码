@@ -1,0 +1,13 @@
+net stop mysql
+my.ini
+[mysqld]
+skip-grant-tables
+
+net start mysql
+cmd
+mysql -uroot -p
+直接enter
+
+use mysql;
+UPDATE user SET password=PASSWORD('newpasswd')WHERE user='root';
+flush privileges;
